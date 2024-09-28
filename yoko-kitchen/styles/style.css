@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    background-image: url("../img/dark-wood.jpg");
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: calc(200% / 3);
+    max-width: 940px;
+    height: auto;
+    background-color: #fff;
+    border: 2px solid #000;
+}
+
+.header {
+    width: 100%;
+}
+
+.nav {
+    background-color: #aeaca8;
+    margin-top: -4px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 0 5px 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-item {
+    transition: transform ease-in-out 0.3s, color ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    transform: scale(1.2);
+    color: #000;
+}
+
+.nav-item:first-child {
+    color: #000;
+}
+
+.content {
+    display: flex;
+}
+
+.dishes {
+    width: 70%;
+}
+
+.dish-box {
+    display: flex;
+    margin: 20px;
+    border-radius: 4px;
+    transition: background-color ease-in-out 0.2s, transform ease-in-out 0.2s;
+}
+
+.dish-box:hover {
+    background-color: hsl(0, 0%, 95%);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.dish-imgbox {
+    border: 1px solid #eee;
+    margin-right: 20px;
+    padding: 5px;
+    width: auto;
+}
+
+.dish-alt {
+    display: block;
+    color: #666;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.dish-text {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.dish-title {
+    color: #666;
+    margin-bottom: 5px;
+    transition: transform ease-in-out 0.2s, color ease-in-out 0.2s;
+}
+
+.dish-box:hover .dish-title {
+    color: #de6581;
+    transform: scale(1.05);
+}
+
+.dish-subtitle {
+    color: #de6581;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.dish-info {
+    color: #666;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.sidebar {
+    width: 30%;
+    border-left: 1px solid #eee;
+    padding: 10px 30px 0 20px;
+}
+
+.side-title {
+    color: #de6581;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.recipe-item {
+    list-style: none;
+    color: #de6581;
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    transition: transform ease-in-out 0.2s, color ease-in-out 0.2s, background-color ease-in-out 0.2s;
+    border-radius: 4px;
+}
+
+.recipe-item:hover {
+    transform: scale(1.1);
+    color: #985d6a;
+    background-color: #efefef;
+    cursor: pointer;
+}
+
+.contact-text {
+    font-size: 16px;
+    color: #666;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+footer {
+    padding: 7px 0 0 20px;
+    height: 30px;
+    background-color: #aeaca8;
+    color: #fff;
+    font-size: 12px;
+}

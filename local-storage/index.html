@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<title>HTML5 Local Storage Project</title>
+<META charset="UTF-8">
+<META name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<META NAME='rating' CONTENT='General' />
+<META NAME='expires' CONTENT='never' />
+<META NAME='language' CONTENT='English, EN' />
+<META name="description" content="shopping cart project with HTML5 and JavaScript">
+<META name="keywords" content="HTML5,CSS,JavaScript, html5 session storage, html5 local storage">
+<META name="author" content="dcwebmakers.com">
+<script src="./Storage-remake.js"></script>
+<link rel="stylesheet" href="StorageStyle.css">
+<link rel="stylesheet" href="../nav_style.css">
+</head>
+
+
+<body onload="doShowAll()">
+
+	<header id="header">
+        <h1 class="name">Phong Nguyen</h1>
+        <div class="links">
+            <a href="../form-validate/index.html" class="header-nav">Form Validation</a>
+            <a href="../local-storage/index.html" class="header-nav">Local Storage</a>
+            <a href="../yoko-kitchen/index.html" class="header-nav">Yoko's Kitchen</a>
+            <a href="../simple-form/index.html" class="header-nav">Form with Bootstrap</a>
+			<a href="../digitalClock/index.html" class="header-nav">Digital Clock</a>
+            <a href="../layout/index.html" class="header-nav">Bootstrap Layout</a>
+        </div>
+	</header>
+
+	<div class="container">
+		<h2>Shopping Cart with HTML5 Storage Project</h2>
+		<p>Insert items and quantity for your shopping cart. </p>
+		<form name=ShoppingList class="form">
+
+			<div id="main">
+				<table>
+					<tr>
+
+						<td><b>Item:</b></td>
+						<td><input type=text name=name></td>
+
+					</tr>
+					<tr>
+						<td><b>Quantity:</b></td>
+						<td><input type=text name=data></td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td>
+							<input type=button value="Save"   onclick="SaveItem()"> 
+							<input type=button value="Update" onclick="ModifyItem()"> 
+							<input type=button value="Delete" onclick="RemoveItem()">
+						</td>
+					</tr>
+				</table>
+				<span id="message"></span>
+			</div>
+
+			<div id="items_table">
+				<h3>Shopping List</h3>
+				<table id=list>
+				</table>
+				<p>
+					<label><input type=button value="Clear" onclick="ClearAll()">
+						<i>* Delete all items</i></label>
+				</p>
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
